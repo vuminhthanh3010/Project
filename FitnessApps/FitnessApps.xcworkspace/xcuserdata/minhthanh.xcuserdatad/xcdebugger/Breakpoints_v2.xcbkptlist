@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FitnessApps/ExersireViewController.swift"
+            timestampString = "586163649.616837"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FitnessApps/MealPlansViewController.swift"
+            timestampString = "586163649.616913"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "MealPlansViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FitnessApps.MealPlansViewController.imgMealPlans.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "FitnessApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhthanh/Desktop/Project/FitnessApps/FitnessApps/MealPlansViewController.swift"
+                  timestampString = "586065561.22628"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FitnessApps.MealPlansViewController.imgMealPlans.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "FitnessApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhthanh/Desktop/Project/FitnessApps/FitnessApps/MealPlansViewController.swift"
+                  timestampString = "586065561.309568"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FitnessApps.MealPlansViewController.imgMealPlans.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "FitnessApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhthanh/Desktop/Project/FitnessApps/FitnessApps/MealPlansViewController.swift"
+                  timestampString = "586065561.3127511"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FitnessApps.MealPlansViewController.imgMealPlans.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "FitnessApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhthanh/Desktop/Project/FitnessApps/FitnessApps/MealPlansViewController.swift"
+                  timestampString = "586065561.3158309"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FitnessApps.MealPlansViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; FitnessApps.MealPlansViewController"
+                  moduleName = "FitnessApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhthanh/Desktop/Project/FitnessApps/FitnessApps/MealPlansViewController.swift"
+                  timestampString = "586065561.319077"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FitnessApps.MealPlansViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;FitnessApps.MealPlansViewController&gt;"
+                  moduleName = "FitnessApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhthanh/Desktop/Project/FitnessApps/FitnessApps/MealPlansViewController.swift"
+                  timestampString = "586065561.322188"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
