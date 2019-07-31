@@ -15,13 +15,14 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
     @IBOutlet weak var nameInfoProfile: UILabel!
     let picker = UIPickerView()
     var toolBar = UIToolbar()
+    var btn = UIButton()
     var arrayList   =   [String]()
     let listInfo    =   ["GENDER","AGE","WEIGHT","HEIGHT"]
     let listGender  =   ["Female","Male"]
     let listAge     =   Array(10...100)
     let listWeight  =   Array(10...200)
     let listHeight  =   Array(10...200)
-    var key:String?
+    var key:String = ""
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -90,36 +91,44 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
             ImageInfoProfile.contentMode =   .scaleAspectFill
             self.dismiss(animated: true, completion: nil)
         }
-
+    
     @IBAction func btnChangeInfo(_ sender: UIButton) {
         
-//        if sender.tag   ==  0{
-//            arrayList = listGender
-//            key = "gender"
-//            customPickerView()
-//        }else if sender.tag ==  1{
-        if sender.tag ==  1{
+        if sender.tag   ==  0{
+            sender.isEnabled    =   false
+            btn = sender
+            arrayList = listGender
+            key = "gender"
+            customPickerView()
+            picker.reloadAllComponents()
+        }else if sender.tag ==  1{
+            sender.isEnabled    =   false
+            btn = sender
             let stringListAge = listAge.map { String($0) }
             arrayList = stringListAge
             key = "age"
             customPickerView()
-//        }
-        }else if sender.tag ==  2{
+            picker.reloadAllComponents()
 
+        }else if sender.tag ==  2{
+            sender.isEnabled    =   false
+            btn = sender
             let stringListWeight = listWeight.map { String($0) }
             arrayList = stringListWeight
             key =   "weight"
             customPickerView()
+            picker.reloadAllComponents()
 
         }else if sender.tag ==  3{
+            sender.isEnabled    =   false
+            btn = sender
             let stringListHeight = listHeight.map { String($0) }
             arrayList = stringListHeight
             key =   "height"
             customPickerView()
+            picker.reloadAllComponents()
+
         }
-        
-        
-        
     }
     func customPickerView(){
         picker.backgroundColor = UIColor(red: 0.4902, green: 0.4902, blue: 0.4902, alpha: 1)
@@ -135,11 +144,13 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
     }
     
     @objc func onCancelButtonTapped() {
+        btn.isEnabled    =   true
         tableViewInfoProfile.reloadData()
         toolBar.removeFromSuperview()
         picker.removeFromSuperview()
     }
     @objc func onDoneButtonTapped() {
+        btn.isEnabled    =   true
         toolBar.removeFromSuperview()
         picker.removeFromSuperview()
         tableViewInfoProfile.reloadData()
@@ -156,7 +167,7 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
         return arrayList[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        UserDefaults.standard.set(arrayList[row], forKey: key!)
+        UserDefaults.standard.set(arrayList[row], forKey: key)
     }
     
 
