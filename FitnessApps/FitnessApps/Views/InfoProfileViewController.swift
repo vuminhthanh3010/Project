@@ -8,13 +8,20 @@
 
 import UIKit
 
-class InfoProfileViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate{
+class InfoProfileViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIPickerViewDataSource,UIPickerViewDelegate{
     
     @IBOutlet weak var tableViewInfoProfile: UITableView!
     @IBOutlet weak var ImageInfoProfile: UIImageView!
     @IBOutlet weak var nameInfoProfile: UILabel!
-    
-    var infoProfile =   ["GENDER","AGE","WEIGHT","HEIGHT"]
+    let picker = UIPickerView()
+    var toolBar = UIToolbar()
+    var arrayList   =   [String]()
+    let listInfo    =   ["GENDER","AGE","WEIGHT","HEIGHT"]
+    let listGender  =   ["Female","Male"]
+    let listAge     =   Array(10...100)
+    let listWeight  =   Array(10...200)
+    let listHeight  =   Array(10...200)
+    var key:String?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -24,7 +31,7 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
         navigationController?.navigationBar.tintColor = UIColor.white
         tableViewInfoProfile.tableFooterView    =   UIView()
     }
-//    let pickerView = UIPickerView()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +40,12 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
         
         tableViewInfoProfile.delegate   =   self
         tableViewInfoProfile.dataSource =   self
-//        pickerView.delegate =   self
-//        pickerView.dataSource   =   self
+        picker.delegate =   self
+        picker.dataSource   =   self
+        
+        if let name = UserDefaults.standard.string(forKey: "name"){
+            self.nameInfoProfile.text    = name
+        }
     }
     @IBAction func changeName(_ sender: UIButton) {
         let alert   =   UIAlertController(title: "Thông báo", message: "Tên của bạn là gì?", preferredStyle: .alert)
@@ -43,7 +54,9 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
         }
         let btnCancel   =   UIAlertAction(title: "Huỷ", style: .destructive) { (cancel) in}
         let btnOk       =   UIAlertAction(title: "Ok", style: .default) { (ok) in
-            self.nameInfoProfile.text    =   alert.textFields![0].text!
+            let saveName   =   alert.textFields![0].text!
+            self.nameInfoProfile.text    =   saveName
+            UserDefaults.standard.set(saveName, forKey: "name")
         }
         alert.addAction(btnCancel)
         alert.addAction(btnOk)
@@ -77,30 +90,86 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
             ImageInfoProfile.contentMode =   .scaleAspectFill
             self.dismiss(animated: true, completion: nil)
         }
+
+    @IBAction func btnChangeInfo(_ sender: UIButton) {
+        
+//        if sender.tag   ==  0{
+//            arrayList = listGender
+//            key = "gender"
+//            customPickerView()
+//        }else if sender.tag ==  1{
+        if sender.tag ==  1{
+            let stringListAge = listAge.map { String($0) }
+            arrayList = stringListAge
+            key = "age"
+            customPickerView()
+//        }
+        }else if sender.tag ==  2{
+
+            let stringListWeight = listWeight.map { String($0) }
+            arrayList = stringListWeight
+            key =   "weight"
+            customPickerView()
+
+        }else if sender.tag ==  3{
+            let stringListHeight = listHeight.map { String($0) }
+            arrayList = stringListHeight
+            key =   "height"
+            customPickerView()
+        }
+        
+        
+        
+    }
+    func customPickerView(){
+        picker.backgroundColor = UIColor(red: 0.4902, green: 0.4902, blue: 0.4902, alpha: 1)
+        picker.autoresizingMask = .flexibleWidth
+        picker.contentMode = .center
+        picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 300)
+        self.view.addSubview(picker)
+        
+        toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 50))
+        toolBar.barStyle = .blackTranslucent
+        toolBar.items = [UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(onCancelButtonTapped)), UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil), UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(onDoneButtonTapped))]
+        self.view.addSubview(toolBar)
+    }
     
-//
-//    @IBAction func btnChangeInfo(_ sender: UIButton) {
-//
-//        pickerView.frame = CGRect.init(x: 0.0, y: 0, width: 300, height: 300)
-//
-//    }
-//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-//        return infoProfile.count
-//    }
-//
-//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-//        return infoProfile[component].count
-//    }
+    @objc func onCancelButtonTapped() {
+        tableViewInfoProfile.reloadData()
+        toolBar.removeFromSuperview()
+        picker.removeFromSuperview()
+    }
+    @objc func onDoneButtonTapped() {
+        toolBar.removeFromSuperview()
+        picker.removeFromSuperview()
+        tableViewInfoProfile.reloadData()
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return arrayList.count
+    }
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return arrayList[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        UserDefaults.standard.set(arrayList[row], forKey: key!)
+    }
+    
 
 }
 extension InfoProfileViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return infoProfile.count
+        return listInfo.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell    =   tableViewInfoProfile.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! InfoProfileTableViewCell
-        cell.Property.text      =   infoProfile[indexPath.row]
+        cell.Property.text      =   listInfo[indexPath.row]
+        cell.btnValueInfo.tag   =   indexPath.row
         cell.selectionStyle =   .none
         return cell
     }

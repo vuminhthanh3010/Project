@@ -13,6 +13,8 @@ class ProfileViewController: UIViewController {
 //    @IBOutlet weak var btnChangeImage: UIButton!
     @IBOutlet weak var tableViewProfile: UITableView!
     @IBOutlet weak var imgHinh: UIImageView!
+    @IBOutlet weak var showName: UILabel!
+    
 
     var listProfile =   ["Thông tin tài khoản","Cài đặt"]
     var iconListProfile =   ["info","setting"]
@@ -24,6 +26,11 @@ class ProfileViewController: UIViewController {
         tabBarController?.tabBar.tintColor  =   UIColor.white
         tabBarController?.tabBar.barTintColor   =   UIColor(red: 0.0784, green: 0.1137, blue: 0.1529, alpha: 1)
         tableViewProfile.tableFooterView = UIView()
+        
+        if let name = UserDefaults.standard.string(forKey: "name"){
+            self.showName.text    = name
+            
+        }
     }
     
     override func viewDidLoad() {
