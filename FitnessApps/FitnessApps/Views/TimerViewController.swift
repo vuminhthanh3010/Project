@@ -28,6 +28,7 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var btnStart: UIButton!
     var count:Int    =   0
     var timer   =   Timer()
+    var countButton = 0
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title    =   "Hẹn giờ"
@@ -51,7 +52,7 @@ class TimerViewController: UIViewController {
         btnPause.layer.cornerRadius =   8
         
         btnPause.isUserInteractionEnabled   =   false
-        
+        btnPause.backgroundColor    =   UIColor(red: 0.3176, green: 0.6118, blue: 0.8235, alpha: 0.4)
         showTime.text   =   "00:0\(count)"
         
     }
@@ -95,27 +96,39 @@ class TimerViewController: UIViewController {
             count = 0
             calculaterTime(count: count)
         }
-
     }
     
     @IBAction func btnStart(_ sender: UIButton) {
+        
         btnStart.backgroundColor    =   UIColor(red: 0.3176, green: 0.6118, blue: 0.8235, alpha: 0.4)
+        btnPause.backgroundColor    =   UIColor(red: 0.3176, green: 0.6118, blue: 0.8235, alpha: 1)
         btnPause.isUserInteractionEnabled   =   true
         btnStart.isUserInteractionEnabled   =   false
         customButton(bool: false, color: UIColor(red: 0.5412, green: 0.5412, blue: 0.5412, alpha: 1))
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true)
-    }
+        
+            if count <= 0{
+            alert(title: "Bạn chưa chọn giờ gian")
+            timer.invalidate()
+            }
+        }
     @objc func UpdateTime(){
-        count += 1
+        count -= 1
         calculaterTime(count: count)
+        switch count {
+        case 0:
+            alert(title: "Hết giờ")
+            timer.invalidate()
+        default:
+            break
+        }
     }
     
     @IBAction func btnPause(_ sender: UIButton) {
+        
         timer.invalidate()
         btnPause.backgroundColor    =   UIColor(red: 0.3176, green: 0.6118, blue: 0.8235, alpha: 0.4)
         btnStart.backgroundColor    =   UIColor(red: 0.3176, green: 0.6118, blue: 0.8235, alpha: 1)
-
-        
         btnPause.isUserInteractionEnabled   =   false
         btnStart.isUserInteractionEnabled   =   true
         customButton(bool: false, color: UIColor(red: 0.5412, green: 0.5412, blue: 0.5412, alpha: 1))
@@ -123,7 +136,6 @@ class TimerViewController: UIViewController {
         btnleft.isUserInteractionEnabled =   true
         btnRight.titleLabel?.textColor =   UIColor.black
         btnRight.isUserInteractionEnabled =   true
-        
     }
     @IBAction func btnReset(_ sender: UIButton) {
         timer.invalidate()
@@ -136,14 +148,13 @@ class TimerViewController: UIViewController {
         btnStart.isUserInteractionEnabled   =   true
         customButton(bool: true, color: UIColor.black)
     }
-    
     func calculaterTime(count:Int){
         if count < 10{
             showTime.text   =   "00:0\(count)"
         }
         else if count >= 10 && count < 60{
             showTime.text   =   "00:\(count)"
-        }else if count>60 && count < 600{
+        }else if count>=60 && count < 600{
             if count % 60 < 10{
                 showTime.text   =   "0\((count-(count % 60))/60):0\(count % 60)"
             }else if count % 60 >= 10 && count % 60 < 60{
@@ -181,6 +192,16 @@ class TimerViewController: UIViewController {
         button.layer.cornerRadius = button.frame.height / 2
         button.clipsToBounds = true
     }
-
-    
+    func alert(title:String){
+        let alert = UIAlertController(title: "Thông báo", message: title, preferredStyle: .alert)
+        let btnOk   =   UIAlertAction(title: "Ok", style: .default) { (ok) in
+            self.btnPause.backgroundColor    =   UIColor(red: 0.3176, green: 0.6118, blue: 0.8235, alpha: 0.4)
+            self.btnStart.backgroundColor    =   UIColor(red: 0.3176, green: 0.6118, blue: 0.8235, alpha: 1)
+            self.btnPause.isUserInteractionEnabled   =   false
+            self.btnStart.isUserInteractionEnabled   =   true
+            self.customButton(bool: true, color: UIColor.black)
+        }
+        alert.addAction(btnOk)
+        present(alert, animated: true, completion: nil)
+    }
 }

@@ -398,7 +398,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Friday" translatesAutoresizingMaskIntoConstraints="NO" id="gnO-RU-rQd">
-                                                    <rect key="frame" x="10" y="5" width="394" height="210.50000000000045"/>
+                                                    <rect key="frame" x="10" y="5" width="394" height="210.5"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -440,28 +440,9 @@
                     <view key="view" contentMode="scaleToFill" id="m5I-ZD-DDc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XyX-XN-thg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="XyX-XN-thg" firstAttribute="leading" secondItem="m5I-ZD-DDc" secondAttribute="leading" id="K7p-lq-uqV"/>
-                            <constraint firstAttribute="trailing" secondItem="XyX-XN-thg" secondAttribute="trailing" id="dT5-Ex-084"/>
-                            <constraint firstItem="XyX-XN-thg" firstAttribute="top" secondItem="m5I-ZD-DDc" secondAttribute="top" id="ghK-6x-QxY"/>
-                            <constraint firstAttribute="bottom" secondItem="XyX-XN-thg" secondAttribute="bottom" id="sZ1-6h-HZU"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FtT-vd-LuA"/>
                     </view>
-                    <connections>
-                        <outlet property="webView" destination="XyX-XN-thg" id="II1-sY-Nho"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmu-59-JSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
