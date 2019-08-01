@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		18EEA829DE7E8BDB3D928AA6 /* Pods_FitnessApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC8AF86C900D0567F8BDBF5 /* Pods_FitnessApps.framework */; };
+		EA4CFEE422F28E6500ECC0A9 /* CategoryExersireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CFEE322F28E6500ECC0A9 /* CategoryExersireViewController.swift */; };
+		EA4CFEE622F28FDE00ECC0A9 /* CategoryExersireTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CFEE522F28FDE00ECC0A9 /* CategoryExersireTableViewCell.swift */; };
+		EA4CFEE822F297BB00ECC0A9 /* DetailExersireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CFEE722F297BB00ECC0A9 /* DetailExersireViewController.swift */; };
+		EA4CFEEC22F299F400ECC0A9 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA4CFEEB22F299F400ECC0A9 /* demo.gif */; };
+		EA4CFEEE22F29D9400ECC0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4CFEED22F29D9100ECC0A9 /* Assets.xcassets */; };
+		EA4CFEF022F2A4D900ECC0A9 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CFEEF22F2A4D900ECC0A9 /* TimerViewController.swift */; };
 		EA836C9D22EF3D3E004A61C1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA836C9C22EF3D3E004A61C1 /* ProfileViewController.swift */; };
 		EA836CA222EF45EC004A61C1 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA836CA022EF45EC004A61C1 /* ProfileTableViewCell.swift */; };
 		EA881CA922EAC94A009466DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA881CA822EAC94A009466DD /* AppDelegate.swift */; };
@@ -20,7 +26,6 @@
 		EAE3A0DD22EEA30800DE1F29 /* MealPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3A0DC22EEA30700DE1F29 /* MealPlansViewController.swift */; };
 		EAE3A0E022EEA43400DE1F29 /* MealPlansTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3A0DE22EEA43400DE1F29 /* MealPlansTableViewCell.swift */; };
 		EAE3A0E522EEAD4100DE1F29 /* DetailMealPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3A0E422EEAD4100DE1F29 /* DetailMealPlansViewController.swift */; };
-		EAEB01F122EFDFB4003FBF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEB01F022EFDFB4003FBF76 /* Assets.xcassets */; };
 		EAEB01F322EFEFB0003FBF76 /* SettingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB01F222EFEFB0003FBF76 /* SettingProfileViewController.swift */; };
 		EAEB01F622EFEFCA003FBF76 /* SettingProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB01F422EFEFCA003FBF76 /* SettingProfileTableViewCell.swift */; };
 		EAEB01FB22F0368F003FBF76 /* InfoProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB01FA22F0368F003FBF76 /* InfoProfileViewController.swift */; };
@@ -31,6 +36,12 @@
 		95C534D25902D164F9AB5EF2 /* Pods-FitnessApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApps.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApps/Pods-FitnessApps.debug.xcconfig"; sourceTree = "<group>"; };
 		99DD5A9FCA6C562ED184C001 /* Pods-FitnessApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApps.release.xcconfig"; path = "Target Support Files/Pods-FitnessApps/Pods-FitnessApps.release.xcconfig"; sourceTree = "<group>"; };
 		DAC8AF86C900D0567F8BDBF5 /* Pods_FitnessApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4CFEE322F28E6500ECC0A9 /* CategoryExersireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExersireViewController.swift; sourceTree = "<group>"; };
+		EA4CFEE522F28FDE00ECC0A9 /* CategoryExersireTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExersireTableViewCell.swift; sourceTree = "<group>"; };
+		EA4CFEE722F297BB00ECC0A9 /* DetailExersireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExersireViewController.swift; sourceTree = "<group>"; };
+		EA4CFEEB22F299F400ECC0A9 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		EA4CFEED22F29D9100ECC0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA4CFEEF22F2A4D900ECC0A9 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		EA836C9C22EF3D3E004A61C1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EA836CA022EF45EC004A61C1 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		EA881CA522EAC94A009466DD /* FitnessApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +56,6 @@
 		EAE3A0DC22EEA30700DE1F29 /* MealPlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlansViewController.swift; sourceTree = "<group>"; };
 		EAE3A0DE22EEA43400DE1F29 /* MealPlansTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlansTableViewCell.swift; sourceTree = "<group>"; };
 		EAE3A0E422EEAD4100DE1F29 /* DetailMealPlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMealPlansViewController.swift; sourceTree = "<group>"; };
-		EAEB01F022EFDFB4003FBF76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAEB01F222EFEFB0003FBF76 /* SettingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileViewController.swift; sourceTree = "<group>"; };
 		EAEB01F422EFEFCA003FBF76 /* SettingProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileTableViewCell.swift; sourceTree = "<group>"; };
 		EAEB01FA22F0368F003FBF76 /* InfoProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProfileViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +108,7 @@
 				EAE3A0D222EBF58900DE1F29 /* Model */,
 				EAE3A0D122EBF57B00DE1F29 /* Views */,
 				EA881CA822EAC94A009466DD /* AppDelegate.swift */,
-				EAEB01F022EFDFB4003FBF76 /* Assets.xcassets */,
+				EA4CFEED22F29D9100ECC0A9 /* Assets.xcassets */,
 				EA881CB722EAC94E009466DD /* Info.plist */,
 				EA881CAF22EAC94A009466DD /* FitnessApps.xcdatamodeld */,
 				EAE3A0DA22EE8A7600DE1F29 /* Extension.swift */,
@@ -111,9 +121,12 @@
 			children = (
 				EA881CAC22EAC94A009466DD /* Main.storyboard */,
 				EA881CB422EAC94E009466DD /* LaunchScreen.storyboard */,
-				EAE3A0E422EEAD4100DE1F29 /* DetailMealPlansViewController.swift */,
 				EAE3A0D422EC0AC900DE1F29 /* ExersireViewController.swift */,
+				EA4CFEE322F28E6500ECC0A9 /* CategoryExersireViewController.swift */,
+				EA4CFEE722F297BB00ECC0A9 /* DetailExersireViewController.swift */,
+				EA4CFEEF22F2A4D900ECC0A9 /* TimerViewController.swift */,
 				EAE3A0DC22EEA30700DE1F29 /* MealPlansViewController.swift */,
+				EAE3A0E422EEAD4100DE1F29 /* DetailMealPlansViewController.swift */,
 				EA836C9C22EF3D3E004A61C1 /* ProfileViewController.swift */,
 				EAEB01F222EFEFB0003FBF76 /* SettingProfileViewController.swift */,
 				EAEB01FA22F0368F003FBF76 /* InfoProfileViewController.swift */,
@@ -132,10 +145,12 @@
 			isa = PBXGroup;
 			children = (
 				EAE3A0D622EC0CC700DE1F29 /* ExersireTableViewCell.swift */,
+				EA4CFEE522F28FDE00ECC0A9 /* CategoryExersireTableViewCell.swift */,
 				EAE3A0DE22EEA43400DE1F29 /* MealPlansTableViewCell.swift */,
 				EA836CA022EF45EC004A61C1 /* ProfileTableViewCell.swift */,
 				EAEB01F422EFEFCA003FBF76 /* SettingProfileTableViewCell.swift */,
 				EAEB01FC22F044DC003FBF76 /* InfoProfileTableViewCell.swift */,
+				EA4CFEEB22F299F400ECC0A9 /* demo.gif */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,7 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA881CB622EAC94E009466DD /* LaunchScreen.storyboard in Resources */,
-				EAEB01F122EFDFB4003FBF76 /* Assets.xcassets in Resources */,
+				EA4CFEEC22F299F400ECC0A9 /* demo.gif in Resources */,
+				EA4CFEEE22F29D9400ECC0A9 /* Assets.xcassets in Resources */,
 				EA881CAE22EAC94A009466DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,14 +285,18 @@
 				EAEB01F322EFEFB0003FBF76 /* SettingProfileViewController.swift in Sources */,
 				EA836CA222EF45EC004A61C1 /* ProfileTableViewCell.swift in Sources */,
 				EAE3A0DB22EE8A7600DE1F29 /* Extension.swift in Sources */,
+				EA4CFEE622F28FDE00ECC0A9 /* CategoryExersireTableViewCell.swift in Sources */,
 				EAE3A0D822EC0CC700DE1F29 /* ExersireTableViewCell.swift in Sources */,
+				EA4CFEE822F297BB00ECC0A9 /* DetailExersireViewController.swift in Sources */,
 				EAE3A0E022EEA43400DE1F29 /* MealPlansTableViewCell.swift in Sources */,
+				EA4CFEF022F2A4D900ECC0A9 /* TimerViewController.swift in Sources */,
 				EA881CB122EAC94A009466DD /* FitnessApps.xcdatamodeld in Sources */,
 				EAEB01FD22F044DC003FBF76 /* InfoProfileTableViewCell.swift in Sources */,
 				EAE3A0E522EEAD4100DE1F29 /* DetailMealPlansViewController.swift in Sources */,
 				EAEB01FB22F0368F003FBF76 /* InfoProfileViewController.swift in Sources */,
 				EA881CA922EAC94A009466DD /* AppDelegate.swift in Sources */,
 				EAE3A0D522EC0AC900DE1F29 /* ExersireViewController.swift in Sources */,
+				EA4CFEE422F28E6500ECC0A9 /* CategoryExersireViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

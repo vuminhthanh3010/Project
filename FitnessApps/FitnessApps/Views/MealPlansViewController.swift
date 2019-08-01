@@ -52,7 +52,7 @@ extension MealPlansViewController: UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb  =   UIStoryboard(name: "Main", bundle: nil)
-        let mh2 =   sb.instantiateViewController(withIdentifier: "detail") as! DetailMealPlansViewController
+        let mh2 =   sb.instantiateViewController(withIdentifier: "detailMealPlans") as! DetailMealPlansViewController
         mh2.id  =   imgMealPlans[indexPath.row]
         self.navigationController?.pushViewController(mh2, animated: true)
     }
