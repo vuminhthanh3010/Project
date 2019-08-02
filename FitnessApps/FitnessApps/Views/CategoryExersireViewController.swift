@@ -9,37 +9,66 @@
 import UIKit
 
 class CategoryExersireViewController: UIViewController {
-
+    
     @IBOutlet weak var tableViewCategoryExersire: UITableView!
     
-    var imgCategoryABS    =   ["hardstylePlank","deadBug","dumbbellSideBend","birdDog","barbellBackSquat","extension"]
-    
+    var imgCategoryABS    =   ["hardStylePlank","deadBug","dumbbellSideBend","birdDog","barbellBackSquat","extension"]
+    var imgCategoryBACK     =   ["barbellDeadlift","kettlebellSwing","pullUp","sumbbellSingleArmRow","singleArmTBarRows","latPullDowns","InvertedRow","farmersWalk"]
+    var idCategory:Int?
+    var category   =   [String]()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.navigationBar.topItem?.title  =   ""
-        navigationController?.navigationBar.barTintColor    =   UIColor(red: 0.0784, green: 0.1137, blue: 0.1529, alpha: 1)
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20),NSAttributedString.Key.foregroundColor: UIColor.white]
-        tabBarController?.tabBar.tintColor  =   UIColor.white
-        tabBarController?.tabBar.barTintColor   =   UIColor(red: 0.0784, green: 0.1137, blue: 0.1529, alpha: 1)
+        
+        if idCategory! == 0{
+            navigationItem.title    =   "Bài Tập Bụng"
+        }else if idCategory! == 1{
+            navigationItem.title    =   "Bài Tập Lưng"
+        }
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.title    =   "Bài tập bụng"
+        idCategory = UserDefaults.standard.integer(forKey: "idCategory")
+        if idCategory! == 0{
+            navigationItem.title    =   "Bài Tập Bụng"
+        }else if idCategory! == 1{
+            navigationItem.title    =   "Bài Tập Lưng"
+        }
         tableViewCategoryExersire.delegate      =   self
         tableViewCategoryExersire.dataSource    =   self
+        
     }
 }
 extension CategoryExersireViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return imgCategoryABS.count
+        switch idCategory! {
+        case 0:
+            category   =   imgCategoryABS
+            break
+        case 1:
+            category   =   imgCategoryBACK
+            break
+        default:
+            break
+        }
+        return category.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell    =   tableViewCategoryExersire.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryExersireTableViewCell
-        cell.imgCategoryExersire.image  =   UIImage(named: imgCategoryABS[indexPath.row])
+        switch idCategory! {
+        case 0:
+            cell.imgCategoryExersire.image  =   UIImage(named: imgCategoryABS[indexPath.row])
+            break
+        case 1:
+            cell.imgCategoryExersire.image  =   UIImage(named: imgCategoryBACK[indexPath.row])
+            break
+        default:
+            break
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -48,6 +77,8 @@ extension CategoryExersireViewController: UITableViewDelegate,UITableViewDataSou
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let mh2 =   sb.instantiateViewController(withIdentifier: "detailExersire") as! DetailExersireViewController
+        UserDefaults.standard.set(category[indexPath.row], forKey: "idDetail")
+        mh2.id =    indexPath.row
         self.navigationController?.pushViewController(mh2, animated: true)
     }
     

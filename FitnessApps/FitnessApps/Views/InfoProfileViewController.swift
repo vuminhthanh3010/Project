@@ -28,12 +28,10 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
         super.viewWillAppear(animated)
         navigationItem.title    =   "Thông tin cá nhân"
         navigationController?.navigationBar.topItem?.title  =   ""
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20),NSAttributedString.Key.foregroundColor: UIColor.white]
-        navigationController?.navigationBar.tintColor = UIColor.white
         tableViewInfoProfile.tableFooterView    =   UIView()
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ImageInfoProfile.layer.cornerRadius = ImageInfoProfile.frame.height / 2
@@ -65,32 +63,32 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
     }
     
     @IBAction func changeImage(_ sender: UITapGestureRecognizer) {
-            let alert   =   UIAlertController(title: "Thông báo", message: "Bạn có muỗn thay đổi ảnh đại diện?", preferredStyle: .actionSheet)
-    
-            let btnCamera       =   UIAlertAction(title: "Camera", style: .destructive) { (camera) in
-                let imageController =   UIImagePickerController()
-                imageController.delegate    =   self
-                imageController.sourceType  =   .camera
-                self.present(imageController, animated: true, completion: nil)
-            }
-            let btnLibrary       =   UIAlertAction(title: "Thư viện", style: .destructive) { (library) in
-                let imageController =   UIImagePickerController()
-                imageController.delegate    =   self
-                imageController.sourceType  =   .photoLibrary
-                self.present(imageController, animated: true, completion: nil)
-            }
-            let btnCancel   =   UIAlertAction(title: "Huỷ bỏ", style: .cancel) { (cancel) in}
-            alert.addAction(btnCamera)
-            alert.addAction(btnLibrary)
-            alert.addAction(btnCancel)
-    
-            present(alert, animated: true, completion: nil)
+        let alert   =   UIAlertController(title: "Thông báo", message: "Bạn có muỗn thay đổi ảnh đại diện?", preferredStyle: .actionSheet)
+        
+        let btnCamera       =   UIAlertAction(title: "Camera", style: .destructive) { (camera) in
+            let imageController =   UIImagePickerController()
+            imageController.delegate    =   self
+            imageController.sourceType  =   .camera
+            self.present(imageController, animated: true, completion: nil)
         }
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            ImageInfoProfile.image   =   info[UIImagePickerController.InfoKey.originalImage] as? UIImage
-            ImageInfoProfile.contentMode =   .scaleAspectFill
-            self.dismiss(animated: true, completion: nil)
+        let btnLibrary       =   UIAlertAction(title: "Thư viện", style: .destructive) { (library) in
+            let imageController =   UIImagePickerController()
+            imageController.delegate    =   self
+            imageController.sourceType  =   .photoLibrary
+            self.present(imageController, animated: true, completion: nil)
         }
+        let btnCancel   =   UIAlertAction(title: "Huỷ bỏ", style: .cancel) { (cancel) in}
+        alert.addAction(btnCamera)
+        alert.addAction(btnLibrary)
+        alert.addAction(btnCancel)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        ImageInfoProfile.image   =   info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        ImageInfoProfile.contentMode =   .scaleAspectFill
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func btnChangeInfo(_ sender: UIButton) {
         
@@ -109,7 +107,7 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
             key = "age"
             customPickerView()
             picker.reloadAllComponents()
-
+            
         }else if sender.tag ==  2{
             sender.isEnabled    =   false
             btn = sender
@@ -118,7 +116,7 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
             key =   "weight"
             customPickerView()
             picker.reloadAllComponents()
-
+            
         }else if sender.tag ==  3{
             sender.isEnabled    =   false
             btn = sender
@@ -127,7 +125,7 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
             key =   "height"
             customPickerView()
             picker.reloadAllComponents()
-
+            
         }
     }
     func customPickerView(){
@@ -158,11 +156,11 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return arrayList.count
     }
-
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return arrayList[row]
     }
@@ -170,7 +168,7 @@ class InfoProfileViewController: UIViewController,UINavigationControllerDelegate
         UserDefaults.standard.set(arrayList[row], forKey: key)
     }
     
-
+    
 }
 extension InfoProfileViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

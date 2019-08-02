@@ -11,9 +11,52 @@
 		EA4CFEE422F28E6500ECC0A9 /* CategoryExersireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CFEE322F28E6500ECC0A9 /* CategoryExersireViewController.swift */; };
 		EA4CFEE622F28FDE00ECC0A9 /* CategoryExersireTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CFEE522F28FDE00ECC0A9 /* CategoryExersireTableViewCell.swift */; };
 		EA4CFEE822F297BB00ECC0A9 /* DetailExersireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CFEE722F297BB00ECC0A9 /* DetailExersireViewController.swift */; };
-		EA4CFEEC22F299F400ECC0A9 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA4CFEEB22F299F400ECC0A9 /* demo.gif */; };
 		EA4CFEEE22F29D9400ECC0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4CFEED22F29D9100ECC0A9 /* Assets.xcassets */; };
 		EA4CFEF022F2A4D900ECC0A9 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CFEEF22F2A4D900ECC0A9 /* TimerViewController.swift */; };
+		EA546C8C22F3C79900A2F20D /* friday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA546C8522F3C79900A2F20D /* friday.jpg */; };
+		EA546C8D22F3C79900A2F20D /* saturday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA546C8622F3C79900A2F20D /* saturday.jpg */; };
+		EA546C8E22F3C79900A2F20D /* wednesday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA546C8722F3C79900A2F20D /* wednesday.jpg */; };
+		EA546C8F22F3C79900A2F20D /* sunday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA546C8822F3C79900A2F20D /* sunday.jpg */; };
+		EA546C9022F3C79900A2F20D /* thursday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA546C8922F3C79900A2F20D /* thursday.jpg */; };
+		EA546C9122F3C79900A2F20D /* monday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA546C8A22F3C79900A2F20D /* monday.jpg */; };
+		EA546C9222F3C79900A2F20D /* tuesday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA546C8B22F3C79900A2F20D /* tuesday.jpg */; };
+		EA546C9622F3C81800A2F20D /* hardStylePlank.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA546C9522F3C81800A2F20D /* hardStylePlank.gif */; };
+		EA546C9A22F3C83C00A2F20D /* extension.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA546C9922F3C83C00A2F20D /* extension.gif */; };
+		EA546C9C22F3C84F00A2F20D /* deadBug.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA546C9B22F3C84F00A2F20D /* deadBug.gif */; };
+		EA546C9E22F3C85D00A2F20D /* dumbbellSideBend.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA546C9D22F3C85D00A2F20D /* dumbbellSideBend.gif */; };
+		EA546CA022F3C87600A2F20D /* barbellBackSquat.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA546C9F22F3C87600A2F20D /* barbellBackSquat.gif */; };
+		EA546CA222F3C88900A2F20D /* birdDog.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA546CA122F3C88900A2F20D /* birdDog.gif */; };
+		EA546CA922F3C90900A2F20D /* deadBug.html in Resources */ = {isa = PBXBuildFile; fileRef = EA546CA322F3C90800A2F20D /* deadBug.html */; };
+		EA546CAA22F3C90900A2F20D /* hardStylePlank.html in Resources */ = {isa = PBXBuildFile; fileRef = EA546CA422F3C90800A2F20D /* hardStylePlank.html */; };
+		EA546CAB22F3C90900A2F20D /* barbellBackSquat.html in Resources */ = {isa = PBXBuildFile; fileRef = EA546CA522F3C90800A2F20D /* barbellBackSquat.html */; };
+		EA546CAC22F3C90900A2F20D /* extension.html in Resources */ = {isa = PBXBuildFile; fileRef = EA546CA622F3C90900A2F20D /* extension.html */; };
+		EA546CAD22F3C90900A2F20D /* dumbbellSideBend.html in Resources */ = {isa = PBXBuildFile; fileRef = EA546CA722F3C90900A2F20D /* dumbbellSideBend.html */; };
+		EA546CAE22F3C90900A2F20D /* birdDog.html in Resources */ = {isa = PBXBuildFile; fileRef = EA546CA822F3C90900A2F20D /* birdDog.html */; };
+		EA5A93C622F33A5A00313E8C /* Sunday.html in Resources */ = {isa = PBXBuildFile; fileRef = EA5A93BF22F33A5A00313E8C /* Sunday.html */; };
+		EA5A93C722F33A5A00313E8C /* Tuesday.html in Resources */ = {isa = PBXBuildFile; fileRef = EA5A93C022F33A5A00313E8C /* Tuesday.html */; };
+		EA5A93C822F33A5A00313E8C /* Thursday.html in Resources */ = {isa = PBXBuildFile; fileRef = EA5A93C122F33A5A00313E8C /* Thursday.html */; };
+		EA5A93C922F33A5A00313E8C /* Friday.html in Resources */ = {isa = PBXBuildFile; fileRef = EA5A93C222F33A5A00313E8C /* Friday.html */; };
+		EA5A93CA22F33A5A00313E8C /* Wednesday.html in Resources */ = {isa = PBXBuildFile; fileRef = EA5A93C322F33A5A00313E8C /* Wednesday.html */; };
+		EA5A93CB22F33A5A00313E8C /* Monday.html in Resources */ = {isa = PBXBuildFile; fileRef = EA5A93C422F33A5A00313E8C /* Monday.html */; };
+		EA5A93CC22F33A5A00313E8C /* Saturday.html in Resources */ = {isa = PBXBuildFile; fileRef = EA5A93C522F33A5A00313E8C /* Saturday.html */; };
+		EA6E646E22F4045100749D88 /* barbellDeadlift.html in Resources */ = {isa = PBXBuildFile; fileRef = EA6E645C22F4045100749D88 /* barbellDeadlift.html */; };
+		EA6E646F22F4045100749D88 /* kettlebellSwing.html in Resources */ = {isa = PBXBuildFile; fileRef = EA6E645D22F4045100749D88 /* kettlebellSwing.html */; };
+		EA6E647022F4045100749D88 /* pullUp.html in Resources */ = {isa = PBXBuildFile; fileRef = EA6E645E22F4045100749D88 /* pullUp.html */; };
+		EA6E647122F4045100749D88 /* barbellDeadlift.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646022F4045100749D88 /* barbellDeadlift.gif */; };
+		EA6E647222F4045100749D88 /* kettlebellSwing.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646122F4045100749D88 /* kettlebellSwing.gif */; };
+		EA6E647322F4045100749D88 /* pullUp.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646222F4045100749D88 /* pullUp.gif */; };
+		EA6E647422F4045100749D88 /* sumbbellSingleArmRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646322F4045100749D88 /* sumbbellSingleArmRow.gif */; };
+		EA6E647522F4045100749D88 /* singleArmTBarRows.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646422F4045100749D88 /* singleArmTBarRows.gif */; };
+		EA6E647622F4045100749D88 /* latPullDowns.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646522F4045100749D88 /* latPullDowns.gif */; };
+		EA6E647722F4045100749D88 /* InvertedRow.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646622F4045100749D88 /* InvertedRow.gif */; };
+		EA6E647822F4045100749D88 /* farmersWalk.gif in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646722F4045100749D88 /* farmersWalk.gif */; };
+		EA6E647922F4045100749D88 /* sumbbellSingleArmRow.html in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646822F4045100749D88 /* sumbbellSingleArmRow.html */; };
+		EA6E647A22F4045100749D88 /* singleArmTBarRows.html in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646922F4045100749D88 /* singleArmTBarRows.html */; };
+		EA6E647B22F4045100749D88 /* latPullDowns.html in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646A22F4045100749D88 /* latPullDowns.html */; };
+		EA6E647C22F4045100749D88 /* InvertedRow.html in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646B22F4045100749D88 /* InvertedRow.html */; };
+		EA6E647D22F4045100749D88 /* farmersWalk.html in Resources */ = {isa = PBXBuildFile; fileRef = EA6E646C22F4045100749D88 /* farmersWalk.html */; };
+		EA6E648022F42FB100749D88 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E647F22F42FB100749D88 /* FavoriteViewController.swift */; };
+		EA6E648222F4309300749D88 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E648122F4309300749D88 /* FavoriteTableViewCell.swift */; };
 		EA836C9D22EF3D3E004A61C1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA836C9C22EF3D3E004A61C1 /* ProfileViewController.swift */; };
 		EA836CA222EF45EC004A61C1 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA836CA022EF45EC004A61C1 /* ProfileTableViewCell.swift */; };
 		EA881CA922EAC94A009466DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA881CA822EAC94A009466DD /* AppDelegate.swift */; };
@@ -39,9 +82,52 @@
 		EA4CFEE322F28E6500ECC0A9 /* CategoryExersireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExersireViewController.swift; sourceTree = "<group>"; };
 		EA4CFEE522F28FDE00ECC0A9 /* CategoryExersireTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExersireTableViewCell.swift; sourceTree = "<group>"; };
 		EA4CFEE722F297BB00ECC0A9 /* DetailExersireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExersireViewController.swift; sourceTree = "<group>"; };
-		EA4CFEEB22F299F400ECC0A9 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		EA4CFEED22F29D9100ECC0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA4CFEEF22F2A4D900ECC0A9 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		EA546C8522F3C79900A2F20D /* friday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = friday.jpg; sourceTree = "<group>"; };
+		EA546C8622F3C79900A2F20D /* saturday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saturday.jpg; sourceTree = "<group>"; };
+		EA546C8722F3C79900A2F20D /* wednesday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wednesday.jpg; sourceTree = "<group>"; };
+		EA546C8822F3C79900A2F20D /* sunday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunday.jpg; sourceTree = "<group>"; };
+		EA546C8922F3C79900A2F20D /* thursday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thursday.jpg; sourceTree = "<group>"; };
+		EA546C8A22F3C79900A2F20D /* monday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monday.jpg; sourceTree = "<group>"; };
+		EA546C8B22F3C79900A2F20D /* tuesday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tuesday.jpg; sourceTree = "<group>"; };
+		EA546C9522F3C81800A2F20D /* hardStylePlank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hardStylePlank.gif; sourceTree = "<group>"; };
+		EA546C9922F3C83C00A2F20D /* extension.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extension.gif; sourceTree = "<group>"; };
+		EA546C9B22F3C84F00A2F20D /* deadBug.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = deadBug.gif; sourceTree = "<group>"; };
+		EA546C9D22F3C85D00A2F20D /* dumbbellSideBend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dumbbellSideBend.gif; sourceTree = "<group>"; };
+		EA546C9F22F3C87600A2F20D /* barbellBackSquat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = barbellBackSquat.gif; sourceTree = "<group>"; };
+		EA546CA122F3C88900A2F20D /* birdDog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = birdDog.gif; sourceTree = "<group>"; };
+		EA546CA322F3C90800A2F20D /* deadBug.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = deadBug.html; sourceTree = "<group>"; };
+		EA546CA422F3C90800A2F20D /* hardStylePlank.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hardStylePlank.html; sourceTree = "<group>"; };
+		EA546CA522F3C90800A2F20D /* barbellBackSquat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = barbellBackSquat.html; sourceTree = "<group>"; };
+		EA546CA622F3C90900A2F20D /* extension.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = extension.html; sourceTree = "<group>"; };
+		EA546CA722F3C90900A2F20D /* dumbbellSideBend.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dumbbellSideBend.html; sourceTree = "<group>"; };
+		EA546CA822F3C90900A2F20D /* birdDog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = birdDog.html; sourceTree = "<group>"; };
+		EA5A93BF22F33A5A00313E8C /* Sunday.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Sunday.html; sourceTree = "<group>"; };
+		EA5A93C022F33A5A00313E8C /* Tuesday.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Tuesday.html; sourceTree = "<group>"; };
+		EA5A93C122F33A5A00313E8C /* Thursday.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Thursday.html; sourceTree = "<group>"; };
+		EA5A93C222F33A5A00313E8C /* Friday.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Friday.html; sourceTree = "<group>"; };
+		EA5A93C322F33A5A00313E8C /* Wednesday.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Wednesday.html; sourceTree = "<group>"; };
+		EA5A93C422F33A5A00313E8C /* Monday.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Monday.html; sourceTree = "<group>"; };
+		EA5A93C522F33A5A00313E8C /* Saturday.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Saturday.html; sourceTree = "<group>"; };
+		EA6E645C22F4045100749D88 /* barbellDeadlift.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = barbellDeadlift.html; sourceTree = "<group>"; };
+		EA6E645D22F4045100749D88 /* kettlebellSwing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kettlebellSwing.html; sourceTree = "<group>"; };
+		EA6E645E22F4045100749D88 /* pullUp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pullUp.html; sourceTree = "<group>"; };
+		EA6E646022F4045100749D88 /* barbellDeadlift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = barbellDeadlift.gif; sourceTree = "<group>"; };
+		EA6E646122F4045100749D88 /* kettlebellSwing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kettlebellSwing.gif; sourceTree = "<group>"; };
+		EA6E646222F4045100749D88 /* pullUp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pullUp.gif; sourceTree = "<group>"; };
+		EA6E646322F4045100749D88 /* sumbbellSingleArmRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sumbbellSingleArmRow.gif; sourceTree = "<group>"; };
+		EA6E646422F4045100749D88 /* singleArmTBarRows.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = singleArmTBarRows.gif; sourceTree = "<group>"; };
+		EA6E646522F4045100749D88 /* latPullDowns.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = latPullDowns.gif; sourceTree = "<group>"; };
+		EA6E646622F4045100749D88 /* InvertedRow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = InvertedRow.gif; sourceTree = "<group>"; };
+		EA6E646722F4045100749D88 /* farmersWalk.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = farmersWalk.gif; sourceTree = "<group>"; };
+		EA6E646822F4045100749D88 /* sumbbellSingleArmRow.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sumbbellSingleArmRow.html; sourceTree = "<group>"; };
+		EA6E646922F4045100749D88 /* singleArmTBarRows.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = singleArmTBarRows.html; sourceTree = "<group>"; };
+		EA6E646A22F4045100749D88 /* latPullDowns.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = latPullDowns.html; sourceTree = "<group>"; };
+		EA6E646B22F4045100749D88 /* InvertedRow.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = InvertedRow.html; sourceTree = "<group>"; };
+		EA6E646C22F4045100749D88 /* farmersWalk.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = farmersWalk.html; sourceTree = "<group>"; };
+		EA6E647F22F42FB100749D88 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		EA6E648122F4309300749D88 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		EA836C9C22EF3D3E004A61C1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EA836CA022EF45EC004A61C1 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		EA881CA522EAC94A009466DD /* FitnessApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +167,102 @@
 				99DD5A9FCA6C562ED184C001 /* Pods-FitnessApps.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA546C8422F3C79900A2F20D /* image */ = {
+			isa = PBXGroup;
+			children = (
+				EA546C8522F3C79900A2F20D /* friday.jpg */,
+				EA546C8622F3C79900A2F20D /* saturday.jpg */,
+				EA546C8722F3C79900A2F20D /* wednesday.jpg */,
+				EA546C8822F3C79900A2F20D /* sunday.jpg */,
+				EA546C8922F3C79900A2F20D /* thursday.jpg */,
+				EA546C8A22F3C79900A2F20D /* monday.jpg */,
+				EA546C8B22F3C79900A2F20D /* tuesday.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		EA546C9322F3C7FA00A2F20D /* ABS */ = {
+			isa = PBXGroup;
+			children = (
+				EA546C9422F3C80300A2F20D /* image */,
+				EA546CA522F3C90800A2F20D /* barbellBackSquat.html */,
+				EA546CA822F3C90900A2F20D /* birdDog.html */,
+				EA546CA322F3C90800A2F20D /* deadBug.html */,
+				EA546CA722F3C90900A2F20D /* dumbbellSideBend.html */,
+				EA546CA622F3C90900A2F20D /* extension.html */,
+				EA546CA422F3C90800A2F20D /* hardStylePlank.html */,
+			);
+			path = ABS;
+			sourceTree = "<group>";
+		};
+		EA546C9422F3C80300A2F20D /* image */ = {
+			isa = PBXGroup;
+			children = (
+				EA546CA122F3C88900A2F20D /* birdDog.gif */,
+				EA546C9F22F3C87600A2F20D /* barbellBackSquat.gif */,
+				EA546C9D22F3C85D00A2F20D /* dumbbellSideBend.gif */,
+				EA546C9B22F3C84F00A2F20D /* deadBug.gif */,
+				EA546C9522F3C81800A2F20D /* hardStylePlank.gif */,
+				EA546C9922F3C83C00A2F20D /* extension.gif */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		EA5A93BE22F33A5A00313E8C /* MealPlansDetailHTML */ = {
+			isa = PBXGroup;
+			children = (
+				EA546C8422F3C79900A2F20D /* image */,
+				EA5A93BF22F33A5A00313E8C /* Sunday.html */,
+				EA5A93C022F33A5A00313E8C /* Tuesday.html */,
+				EA5A93C122F33A5A00313E8C /* Thursday.html */,
+				EA5A93C222F33A5A00313E8C /* Friday.html */,
+				EA5A93C322F33A5A00313E8C /* Wednesday.html */,
+				EA5A93C422F33A5A00313E8C /* Monday.html */,
+				EA5A93C522F33A5A00313E8C /* Saturday.html */,
+			);
+			path = MealPlansDetailHTML;
+			sourceTree = "<group>";
+		};
+		EA5A93E422F359A700313E8C /* ExersireHTML */ = {
+			isa = PBXGroup;
+			children = (
+				EA6E645B22F4045100749D88 /* BACK */,
+				EA546C9322F3C7FA00A2F20D /* ABS */,
+			);
+			path = ExersireHTML;
+			sourceTree = "<group>";
+		};
+		EA6E645B22F4045100749D88 /* BACK */ = {
+			isa = PBXGroup;
+			children = (
+				EA6E645F22F4045100749D88 /* image */,
+				EA6E645C22F4045100749D88 /* barbellDeadlift.html */,
+				EA6E645D22F4045100749D88 /* kettlebellSwing.html */,
+				EA6E645E22F4045100749D88 /* pullUp.html */,
+				EA6E646822F4045100749D88 /* sumbbellSingleArmRow.html */,
+				EA6E646922F4045100749D88 /* singleArmTBarRows.html */,
+				EA6E646A22F4045100749D88 /* latPullDowns.html */,
+				EA6E646B22F4045100749D88 /* InvertedRow.html */,
+				EA6E646C22F4045100749D88 /* farmersWalk.html */,
+			);
+			path = BACK;
+			sourceTree = "<group>";
+		};
+		EA6E645F22F4045100749D88 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				EA6E646022F4045100749D88 /* barbellDeadlift.gif */,
+				EA6E646122F4045100749D88 /* kettlebellSwing.gif */,
+				EA6E646222F4045100749D88 /* pullUp.gif */,
+				EA6E646322F4045100749D88 /* sumbbellSingleArmRow.gif */,
+				EA6E646422F4045100749D88 /* singleArmTBarRows.gif */,
+				EA6E646522F4045100749D88 /* latPullDowns.gif */,
+				EA6E646622F4045100749D88 /* InvertedRow.gif */,
+				EA6E646722F4045100749D88 /* farmersWalk.gif */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 		EA881C9C22EAC949009466DD = {
@@ -124,6 +306,7 @@
 				EAE3A0D422EC0AC900DE1F29 /* ExersireViewController.swift */,
 				EA4CFEE322F28E6500ECC0A9 /* CategoryExersireViewController.swift */,
 				EA4CFEE722F297BB00ECC0A9 /* DetailExersireViewController.swift */,
+				EA6E647F22F42FB100749D88 /* FavoriteViewController.swift */,
 				EA4CFEEF22F2A4D900ECC0A9 /* TimerViewController.swift */,
 				EAE3A0DC22EEA30700DE1F29 /* MealPlansViewController.swift */,
 				EAE3A0E422EEAD4100DE1F29 /* DetailMealPlansViewController.swift */,
@@ -137,6 +320,8 @@
 		EAE3A0D222EBF58900DE1F29 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA5A93E422F359A700313E8C /* ExersireHTML */,
+				EA5A93BE22F33A5A00313E8C /* MealPlansDetailHTML */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,11 +331,11 @@
 			children = (
 				EAE3A0D622EC0CC700DE1F29 /* ExersireTableViewCell.swift */,
 				EA4CFEE522F28FDE00ECC0A9 /* CategoryExersireTableViewCell.swift */,
+				EA6E648122F4309300749D88 /* FavoriteTableViewCell.swift */,
 				EAE3A0DE22EEA43400DE1F29 /* MealPlansTableViewCell.swift */,
 				EA836CA022EF45EC004A61C1 /* ProfileTableViewCell.swift */,
 				EAEB01F422EFEFCA003FBF76 /* SettingProfileTableViewCell.swift */,
 				EAEB01FC22F044DC003FBF76 /* InfoProfileTableViewCell.swift */,
-				EA4CFEEB22F299F400ECC0A9 /* demo.gif */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,9 +408,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA546CA222F3C88900A2F20D /* birdDog.gif in Resources */,
+				EA546CA022F3C87600A2F20D /* barbellBackSquat.gif in Resources */,
+				EA546CAC22F3C90900A2F20D /* extension.html in Resources */,
+				EA6E647322F4045100749D88 /* pullUp.gif in Resources */,
+				EA6E647422F4045100749D88 /* sumbbellSingleArmRow.gif in Resources */,
+				EA6E647D22F4045100749D88 /* farmersWalk.html in Resources */,
+				EA6E647622F4045100749D88 /* latPullDowns.gif in Resources */,
+				EA546CAA22F3C90900A2F20D /* hardStylePlank.html in Resources */,
 				EA881CB622EAC94E009466DD /* LaunchScreen.storyboard in Resources */,
-				EA4CFEEC22F299F400ECC0A9 /* demo.gif in Resources */,
+				EA546CA922F3C90900A2F20D /* deadBug.html in Resources */,
+				EA546C9122F3C79900A2F20D /* monday.jpg in Resources */,
+				EA6E647522F4045100749D88 /* singleArmTBarRows.gif in Resources */,
+				EA546C9222F3C79900A2F20D /* tuesday.jpg in Resources */,
+				EA546CAB22F3C90900A2F20D /* barbellBackSquat.html in Resources */,
+				EA5A93CB22F33A5A00313E8C /* Monday.html in Resources */,
 				EA4CFEEE22F29D9400ECC0A9 /* Assets.xcassets in Resources */,
+				EA546C9622F3C81800A2F20D /* hardStylePlank.gif in Resources */,
+				EA546CAE22F3C90900A2F20D /* birdDog.html in Resources */,
+				EA546C9A22F3C83C00A2F20D /* extension.gif in Resources */,
+				EA6E647722F4045100749D88 /* InvertedRow.gif in Resources */,
+				EA6E647022F4045100749D88 /* pullUp.html in Resources */,
+				EA5A93C622F33A5A00313E8C /* Sunday.html in Resources */,
+				EA6E646F22F4045100749D88 /* kettlebellSwing.html in Resources */,
+				EA546C8D22F3C79900A2F20D /* saturday.jpg in Resources */,
+				EA5A93CA22F33A5A00313E8C /* Wednesday.html in Resources */,
+				EA5A93C822F33A5A00313E8C /* Thursday.html in Resources */,
+				EA6E647922F4045100749D88 /* sumbbellSingleArmRow.html in Resources */,
+				EA546C8F22F3C79900A2F20D /* sunday.jpg in Resources */,
+				EA546C9022F3C79900A2F20D /* thursday.jpg in Resources */,
+				EA5A93C922F33A5A00313E8C /* Friday.html in Resources */,
+				EA6E647122F4045100749D88 /* barbellDeadlift.gif in Resources */,
+				EA546C8E22F3C79900A2F20D /* wednesday.jpg in Resources */,
+				EA546CAD22F3C90900A2F20D /* dumbbellSideBend.html in Resources */,
+				EA6E647B22F4045100749D88 /* latPullDowns.html in Resources */,
+				EA5A93C722F33A5A00313E8C /* Tuesday.html in Resources */,
+				EA6E647222F4045100749D88 /* kettlebellSwing.gif in Resources */,
+				EA546C9C22F3C84F00A2F20D /* deadBug.gif in Resources */,
+				EA6E647822F4045100749D88 /* farmersWalk.gif in Resources */,
+				EA546C8C22F3C79900A2F20D /* friday.jpg in Resources */,
+				EA6E647C22F4045100749D88 /* InvertedRow.html in Resources */,
+				EA6E647A22F4045100749D88 /* singleArmTBarRows.html in Resources */,
+				EA546C9E22F3C85D00A2F20D /* dumbbellSideBend.gif in Resources */,
+				EA5A93CC22F33A5A00313E8C /* Saturday.html in Resources */,
+				EA6E646E22F4045100749D88 /* barbellDeadlift.html in Resources */,
 				EA881CAE22EAC94A009466DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,11 +514,13 @@
 				EA4CFEE622F28FDE00ECC0A9 /* CategoryExersireTableViewCell.swift in Sources */,
 				EAE3A0D822EC0CC700DE1F29 /* ExersireTableViewCell.swift in Sources */,
 				EA4CFEE822F297BB00ECC0A9 /* DetailExersireViewController.swift in Sources */,
+				EA6E648222F4309300749D88 /* FavoriteTableViewCell.swift in Sources */,
 				EAE3A0E022EEA43400DE1F29 /* MealPlansTableViewCell.swift in Sources */,
 				EA4CFEF022F2A4D900ECC0A9 /* TimerViewController.swift in Sources */,
 				EA881CB122EAC94A009466DD /* FitnessApps.xcdatamodeld in Sources */,
 				EAEB01FD22F044DC003FBF76 /* InfoProfileTableViewCell.swift in Sources */,
 				EAE3A0E522EEAD4100DE1F29 /* DetailMealPlansViewController.swift in Sources */,
+				EA6E648022F42FB100749D88 /* FavoriteViewController.swift in Sources */,
 				EAEB01FB22F0368F003FBF76 /* InfoProfileViewController.swift in Sources */,
 				EA881CA922EAC94A009466DD /* AppDelegate.swift in Sources */,
 				EAE3A0D522EC0AC900DE1F29 /* ExersireViewController.swift in Sources */,

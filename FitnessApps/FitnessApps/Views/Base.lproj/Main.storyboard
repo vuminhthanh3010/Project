@@ -10,21 +10,60 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Yêu thích-->
+        <!--Favorite View Controller-->
         <scene sceneID="aHq-zv-dXI">
             <objects>
-                <viewController id="Cpq-er-qGO" sceneMemberID="viewController">
+                <viewController id="Cpq-er-qGO" customClass="FavoriteViewController" customModule="FitnessApps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ev-0C-Iaj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BvY-g9-lhG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="133" id="s7g-4j-cv9" customClass="FavoriteTableViewCell" customModule="FitnessApps" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="133"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s7g-4j-cv9" id="63T-4q-MUR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mud-5V-eHx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Mud-5V-eHx" firstAttribute="top" secondItem="63T-4q-MUR" secondAttribute="top" id="1Cv-ft-PKB"/>
+                                                <constraint firstAttribute="bottom" secondItem="Mud-5V-eHx" secondAttribute="bottom" id="bBF-q4-Tnu"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mud-5V-eHx" secondAttribute="trailing" id="cVP-4U-cuB"/>
+                                                <constraint firstItem="Mud-5V-eHx" firstAttribute="leading" secondItem="63T-4q-MUR" secondAttribute="leading" id="ydX-Xs-eop"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageFavorite" destination="Mud-5V-eHx" id="8w9-qc-P8M"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BvY-g9-lhG" firstAttribute="leading" secondItem="gP0-x3-BYX" secondAttribute="leading" id="79l-3V-hpK"/>
+                            <constraint firstItem="gP0-x3-BYX" firstAttribute="trailing" secondItem="BvY-g9-lhG" secondAttribute="trailing" id="TZ4-SA-ep0"/>
+                            <constraint firstItem="gP0-x3-BYX" firstAttribute="bottom" secondItem="BvY-g9-lhG" secondAttribute="bottom" id="X04-fN-dG5"/>
+                            <constraint firstItem="BvY-g9-lhG" firstAttribute="top" secondItem="gP0-x3-BYX" secondAttribute="top" id="rFe-WK-UyQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gP0-x3-BYX"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Yêu thích" image="favorites" id="VuU-5S-FNC"/>
+                    <navigationItem key="navigationItem" id="AU0-pR-9xq"/>
+                    <connections>
+                        <outlet property="tableViewFavorite" destination="BvY-g9-lhG" id="lrD-pB-JqO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m73-Md-7on" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="698"/>
+            <point key="canvasLocation" x="1079.7101449275362" y="1459.8214285714284"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="v5n-Vt-MzD">
@@ -525,25 +564,12 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hV8-Z1-MFx">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="177.5"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwK-m1-QJs">
-                                                    <rect key="frame" x="369" y="10" width="35" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="35" id="aH7-hw-h9M"/>
-                                                        <constraint firstAttribute="height" constant="35" id="hLZ-CA-UBO"/>
-                                                    </constraints>
-                                                    <state key="normal" image="starOff"/>
-                                                    <connections>
-                                                        <action selector="favorite:" destination="TEo-gW-99A" eventType="touchUpInside" id="j4G-6Q-03j"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="hV8-Z1-MFx" secondAttribute="bottom" id="UPO-EW-pyO"/>
                                                 <constraint firstAttribute="trailing" secondItem="hV8-Z1-MFx" secondAttribute="trailing" id="V2c-O5-Dab"/>
                                                 <constraint firstItem="hV8-Z1-MFx" firstAttribute="leading" secondItem="WjY-YA-olf" secondAttribute="leading" id="hNx-44-Afr"/>
-                                                <constraint firstAttribute="trailing" secondItem="zwK-m1-QJs" secondAttribute="trailing" constant="10" id="hfp-YU-q2X"/>
                                                 <constraint firstItem="hV8-Z1-MFx" firstAttribute="top" secondItem="WjY-YA-olf" secondAttribute="top" id="iPx-1Z-6oI"/>
-                                                <constraint firstItem="zwK-m1-QJs" firstAttribute="top" secondItem="WjY-YA-olf" secondAttribute="top" constant="10" id="jaS-Ru-gGC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -597,7 +623,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="6f0-tL-bjq" kind="relationship" relationship="viewControllers" id="1mn-yk-SLx"/>
-                        <segue destination="Cpq-er-qGO" kind="relationship" relationship="viewControllers" id="a8G-CA-wcO"/>
+                        <segue destination="C5L-Ke-YDT" kind="relationship" relationship="viewControllers" id="a8G-CA-wcO"/>
                         <segue destination="tH1-cb-7UR" kind="relationship" relationship="viewControllers" id="bcN-dl-bw0"/>
                         <segue destination="fFl-ms-qOj" kind="relationship" relationship="viewControllers" id="KdR-it-EIj"/>
                         <segue destination="B6Q-p4-mkB" kind="relationship" relationship="viewControllers" id="evY-qa-Clq"/>
@@ -870,6 +896,25 @@
             </objects>
             <point key="canvasLocation" x="1334.7826086956522" y="697.76785714285711"/>
         </scene>
+        <!--Yêu thích-->
+        <scene sceneID="iLh-kL-JAX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C5L-Ke-YDT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Yêu thích" image="favorites" id="VuU-5S-FNC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xxw-oB-C4Q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cpq-er-qGO" kind="relationship" relationship="rootViewController" id="sIb-ks-vXp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOq-g4-Ifi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285.50724637681162" y="1459.8214285714284"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Friday" width="3171" height="1765"/>
@@ -881,7 +926,6 @@
         <image name="meal" width="32" height="32"/>
         <image name="profile" width="32" height="32"/>
         <image name="setting" width="32" height="32"/>
-        <image name="starOff" width="32" height="32"/>
         <image name="timer" width="32" height="32"/>
     </resources>
 </document>

@@ -9,7 +9,7 @@
 import UIKit
 
 class MealPlansTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var imageMealPlans: UIImageView!
     
     
@@ -19,10 +19,10 @@ class MealPlansTableViewCell: UITableViewCell {
         imageMealPlans.layer.cornerRadius   =   10
         
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     

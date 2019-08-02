@@ -9,21 +9,15 @@
 import UIKit
 
 class SettingProfileViewController: UIViewController {
-
+    
     @IBOutlet weak var TableViewProfile: UITableView!
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.topItem?.title =   ""
-        navigationController?.navigationBar.tintColor   =   .white
-        navigationController?.navigationBar.barTintColor    =   UIColor(red: 0.1765, green: 0.2275, blue: 0.2275, alpha: 1)
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20),NSAttributedString.Key.foregroundColor: UIColor.white]
-        tabBarController?.tabBar.tintColor  =   UIColor.white
-        tabBarController?.tabBar.barTintColor   =   UIColor(red: 0.0784, green: 0.1137, blue: 0.1529, alpha: 1)
         TableViewProfile.tableFooterView = UIView()
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title =   "Cài đặt"

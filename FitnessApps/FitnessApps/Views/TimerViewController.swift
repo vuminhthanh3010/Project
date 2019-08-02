@@ -32,15 +32,10 @@ class TimerViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title    =   "Hẹn giờ"
-        navigationController?.navigationBar.barTintColor    =   UIColor(red: 0.0784, green: 0.1137, blue: 0.1529, alpha: 1)
-        navigationController?.navigationBar.tintColor   =   UIColor.white
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20),NSAttributedString.Key.foregroundColor: UIColor.white]
-        tabBarController?.tabBar.tintColor  =   UIColor.white
-        tabBarController?.tabBar.barTintColor   =   UIColor(red: 0.0784, green: 0.1137, blue: 0.1529, alpha: 1)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         myView.layer.borderWidth    =   1
         myView.layer.cornerRadius = myView.frame.height / 2
         myView.clipsToBounds = true
@@ -56,7 +51,7 @@ class TimerViewController: UIViewController {
         showTime.text   =   "00:0\(count)"
         
     }
-
+    
     @IBAction func btn20(_ sender: UIButton) {
         count = 20
         calculaterTime(count: count)
@@ -107,11 +102,11 @@ class TimerViewController: UIViewController {
         customButton(bool: false, color: UIColor(red: 0.5412, green: 0.5412, blue: 0.5412, alpha: 1))
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true)
         
-            if count <= 0{
+        if count <= 0{
             alert(title: "Bạn chưa chọn giờ gian")
             timer.invalidate()
-            }
         }
+    }
     @objc func UpdateTime(){
         count -= 1
         calculaterTime(count: count)
